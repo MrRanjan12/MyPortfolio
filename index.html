@@ -1,264 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="Portfolio of Ranjan Kumar, a Full-Stack Developer and Aspiring AI Engineer."
-    />
-    <meta
-      name="keywords"
-      content="Ranjan Kumar, Developer, Full-Stack, AI, Portfolio"
-    />
-    <title>Ranjan Kumar | Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img
-            src="./image_source/Untitled-1uu.png"
-            alt="Logo"
-            width="40"
-            height="40"
-            class="me-2 rounded-circle"
-          />
-          Ranjan Kumar</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranjan Kumar | Researcher Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <canvas id="bg-animation"></canvas>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="assets/profile.jpg" alt="Profile" class="profile-img">
+      <h1 class="glow">Ranjan Kumar</h1>
+      <h2 id="typing"></h2>
+      <p class="tagline">"Code is my canvas. Science is my compass. Together, I build for a better tomorrow."</p>
+      <a href="assets/resume.pdf" class="btn-glow">📄 Download Resume</a>
+    </div>
+  </header>
+
+  <!-- Scientific Dashboard -->
+  <section class="dashboard">
+    <div class="panel" data-title="About Me">
+      <p>
+        I am a <b>Software Developer</b> and <b>Aspiring Scientist</b> with a strong passion for innovation, 
+        research, and solving real-world problems using <b>Artificial Intelligence</b> and <b>scientific computing</b>.  
+        My journey started with a background in <b>Computer Applications (BCA)</b>, and now I’m deeply engaged in 
+        building AI-driven systems, automation tools, and applications that merge technology with science.  
+      </p>
+      <p>
+        My mission is to <b>make science accessible</b> to everyone by creating tools that integrate programming, 
+        mathematics, and research into meaningful solutions for society. I believe in using code as a medium not only 
+        for apps but for <b>scientific discoveries</b>.
+      </p>
+    </div>
+
+    <div class="panel" data-title="Tech Stack">
+      <ul>
+        <li>⚡ Programming: JavaScript, Python, C++, C</li>
+        <li>⚡ Frontend: React.js, HTML5, CSS3, Bootstrap, jQuery</li>
+        <li>⚡ Backend: Node.js, Express.js, REST APIs</li>
+        <li>⚡ Databases: MongoDB, MySQL</li>
+        <li>⚡ Tools: Git & GitHub, Postman, Puppeteer, Cheerio</li>
+        <li>⚡ IDEs: Visual Studio Code, Chrome DevTools</li>
+      </ul>
+    </div>
+
+    <div class="panel" data-title="Currently Learning">
+      <ul>
+        <li>🔬 Advanced Python for <b>Machine Learning & Data Science</b></li>
+        <li>🔬 Deep Mathematics: <b>Linear Algebra, Probability, Statistics</b> for AI</li>
+        <li>🔬 Artificial Intelligence: <b>Computer Vision, NLP, Voice Translation</b></li>
+        <li>🔬 Building AI-powered <b>research tools</b> for automation & discovery</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+    <h2 class="section-title">🚀 Projects</h2>
+    <div class="grid">
+      <div class="card-glow">
+        🔭 <b>LLM Powered Telegram Bot</b>  
+        <p>
+          A smart chatbot integrated with <b>Large Language Models</b> for real-time Q&A, summarization, and research assistance.  
+          Supports Telegram + Web UI with advanced NLP features. 
+        </p>
+      </div>
+
+      <div class="card-glow">
+        🎥 <b>AI Video Conferencing App</b>  
+        <p>
+          A futuristic <b>Zoom-like app</b> enhanced with <b>real-time translation, speech-to-text, and AI-powered assistance</b>.  
+          Helps researchers collaborate globally without language barriers.
+        </p>
+      </div>
+
+      <div class="card-glow">
+        🤖 <b>AI Agents & Social Media Manager Bots</b>  
+        <p>
+          Autonomous <b>AI agents</b> that manage social media accounts, auto-generate content, analyze engagement, 
+          and interact with users intelligently. Designed with modular AI pipelines.
+        </p>
+      </div>
+
+      <div class="card-glow">
+        🌌 <b>Scientific Automation Tools</b>  
+        <p>
+          Scripts and software that automate <b>data collection, web scraping (Cheerio/Puppeteer)</b>,  
+          and data visualization for scientific research.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Vision -->
+  <section class="future">
+    <h2 class="section-title">🔮 Future Vision & Ongoing Research</h2>
+    <div class="grid">
+      <div class="card-glow">
+        🧠 <b>Project J.A.R.V.I.S</b> – My Dream AI System  
+        <p>
+          Inspired by the legendary <b>J.A.R.V.I.S</b> from Iron Man, I am developing a <b>real-life AI assistant</b> 
+          that can think, speak, and act intelligently.  
+        </p>
+        <p>
+          This system will combine <b>voice interaction, computer vision, natural language processing, real-time data analysis, 
+          and robotics integration</b>. The goal is to create a <b>personal scientific assistant</b> that helps with daily tasks, 
+          coding, research, and even scientific simulations.  
+        </p>
+        <p>
+          Key Features Planned:
+          <ul>
+            <li>🎙️ Natural voice-based conversations with contextual memory</li>
+            <li>📊 Real-time data analysis and visualization</li>
+            <li>🤖 Integration with IoT & robotics for physical world interaction</li>
+            <li>🌐 Multi-modal AI: vision + text + voice + automation</li>
           </ul>
-        </div>
+        </p>
+        <p>
+          <b>Vision:</b> To create a <b>futuristic AI companion</b> that assists researchers, scientists, and everyday users, 
+          bridging the gap between humans and intelligent machines.
+        </p>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section
-      id="hero"
-      class="d-flex justify-content-center align-items-center text-center"
-    >
-      <div class="overlay"></div>
-      <!-- Dark overlay -->
-      <div class="container text-light">
-        <img
-          src="./image_source/Untitled-1uu.png"
-          alt="Profile"
-          class="img-fluid mb-3"
-          width="170"
-          height="170"
-        />
-        <h1 class="display-4" id="typing"></h1>
-        <p class="lead" id="subtitle"></p>
-        <div class="multiple-text"></div>
-        <a href="#projects" class="btn btn-primary">Check My Work</a>
-      </div>
-    </section>
+  <!-- Timeline -->
+  <section class="timeline">
+    <h2 class="section-title">📜 Certifications & Education</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">🎓 <b>BCA Background</b> – Foundations in Computer Science & Research</div>
+      <div class="timeline-item">📜 Python Intermediate – <b>SoloLearn</b></div>
+      <div class="timeline-item">📜 JavaScript (Basic) – <b>HackerRank</b></div>
+      <div class="timeline-item">📜 Web Development Internship – <b>OctaNet</b></div>
+      <div class="timeline-item">📜 C++, C, JavaScript – <b>SoloLearn</b></div>
+      <div class="timeline-item">📜 Responsive Web Design – <b>freeCodeCamp</b></div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 text-center">
-            <p class="mb-3">
-              Hello! I’m Ranjan Kumar, a passionate Full-Stack Developer and an
-              aspiring AI Engineer. I specialize in creating dynamic and
-              responsive web applications using a variety of modern
-              technologies, including React, Node.js, Express.js, MongoDB,
-              ASP.NET, and C#. With hands-on internship experience, I’ve honed
-              my problem-solving skills and teamwork abilities. I’m currently
-              focused on mastering Data Structures and Algorithms (DSA) while
-              exploring the exciting field of AI and machine learning. Thank you
-              for visiting my portfolio! Feel free to explore my projects and
-              connect with me for collaborations or opportunities.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>🌐 <a href="#">Portfolio</a> | 💼 <a href="https://www.linkedin.com/in/ranjan-kumar-prajapati/">LinkedIn</a> | 📧 <a href="mailto:ranjankumar4447758@gmail.com">Email</a></p>
+  </footer>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Skills</h2>
-        <div class="row text-center">
-          <div class="col-12 col-md-4">
-            <h4>Frontend</h4>
-            <p>HTML, CSS, JavaScript, Bootstrap, React</p>
-          </div>
-          <div class="col-12 col-md-4">
-            <h4>Backend</h4>
-            <p>
-              Node.js, Express.js, MongoDB, ASP.NET, C#, RESTful APIs, MySQL,
-              EJS (Embedded JavaScript)
-            </p>
-          </div>
-          <div class="col-12 col-md-4">
-            <h4>Tools & Tech</h4>
-            <p>
-              Git, REST API, API Development(Visual Studio Code, Postman),
-              Version Control(Git),Database Management(MongoDB, MySQL),
-              Frameworks(Express.js,ASP.net)
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Audio -->
+  <audio id="typeSound" src="" preload="auto"></audio>
+  <audio id="clickSound" src="./sound/mixkit-sci-fi-click-900.wav" preload="auto"></audio>
+  <audio id="slideSound" src="./sound/mixkit-glitch-sci-fi-rewind-transition-1093.wav" preload="auto"></audio>
+  <audio id="glitchSound" src="./sound/mixkit-sci-fi-confirmation-914.wav" preload="auto"></audio>
+  <audio id="ambientSound" src="./sound/mixkit-low-drone-engine-hum-2745.wav" preload="auto" loop></audio>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Projects</h2>
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card mb-4">
-                <a href="https://mrranjan12.github.io/Amazon_clone/" class="card text-decoration-none">
-              <img
-                src="./image_source/Screenshot 2024-10-23 002359.png"
-                class="card-img-top img-fluid"
-                alt="Project 1"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Amazon Clone</h5>
-                <p class="card-text">
-                  A fully responsive clone of Amazon's website built using
-                  Bootstrap, HTML, and CSS.
-                </p>
-              </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card mb-4">
-              <a href="https://mrranjan12.github.io/Tic-Tac-Toe_Game/" class="card text-decoration-none">
-                <img
-                  src="./image_source/tic-tac-game.png"
-                  class="card-img-top img-fluid"
-                  alt="Project 2"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Tic Tac Toe</h5>
-                  <p class="card-text">
-                    A Tic Tac Toe game built using JavaScript HTML and CSS.
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card mb-4">
-                <a href="https://mrranjan12.github.io/Weather-app/" class="card text-decoration-none">
-              <img
-                src="./image_source/b26746bf-b571-47a9-bed0-bc64f34a4fe2.webp"
-                class="card-img-top img-fluid"
-                alt="Project 3"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Weather App</h5>
-                <p class="card-text">
-                  Weather app built using html css js with API integration.
-                </p>
-              </div>
-                </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Contact Me</h2>
-        <form id="contact-form">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <textarea
-                  class="form-control"
-                  id="message"
-                  rows="5"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <div class="col-12 text-center">
-              <button type="submit" class="btn btn-primary">
-                Send Message
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <div class="clearfix"></div>
-    <footer class="py-3 bg-dark text-light text-center">
-      <div class="container">
-        <p>&copy; 2025 Ranjan Prajapati. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <script src="app.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>

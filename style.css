@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0f1f;
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+/* Background Animation Canvas */
+#bg-animation {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 20% 20%, #0f2027, #203a43, #2c5364);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+.profile-img {
+  width: 140px;
+  border-radius: 50%;
+  border: 3px solid cyan;
+  box-shadow: 0 0 20px cyan;
+}
+.glow {
+  font-size: 2.5rem;
+  color: cyan;
+  text-shadow: 0 0 10px cyan, 0 0 20px blue;
+}
+#typing {
+  font-size: 1.3rem;
+  color: #76ff03;
+  margin: 10px 0;
+}
+.btn-glow {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: 2px solid cyan;
+  border-radius: 8px;
+  text-decoration: none;
+  color: cyan;
+  box-shadow: 0 0 15px cyan;
+  transition: 0.3s;
+}
+.btn-glow:hover {
+  background: cyan;
+  color: #000;
+}
+
+/* Dashboard panels as grid like Projects */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 50px;
+}
+
+.panel {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid cyan;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px cyan;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+.panel:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #76ff03;
+  border-color: #76ff03;
+}
+
+.panel::before {
+  content: attr(data-title);
+  position: absolute;
+  top: -15px; left: 20px;
+  background: #0a0f1f;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  color: cyan;
+}
+
+/* Projects */
+.projects .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px;
+  padding: 30px;
+}
+.card-glow {
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #76ff03;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px #76ff03;
+  transition: transform 0.3s;
+}
+.card-glow:hover { transform: scale(1.05); }
+
+/* Timeline */
+.timeline-container {
+  border-left: 2px dashed cyan;
+  margin: 30px auto;
+  padding-left: 20px;
+  max-width: 500px;
+}
+.timeline-item {
+  margin: 20px 0;
+  padding: 10px;
+  position: relative;
+}
+.timeline-item::before {
+  content: "⬤";
+  position: absolute;
+  left: -15px;
+  color: cyan;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #444;
+  margin-top: 40px;
+}
